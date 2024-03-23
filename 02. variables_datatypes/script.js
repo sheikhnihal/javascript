@@ -23,7 +23,7 @@ VARIABLE NAMING RULES
     - Any alphabet.
 */
 
-// let variable type can be re-used 
+// "let" variable type can be re-used 
 variableTwo = 'Hello';
 console.log(variableTwo);
 
@@ -60,12 +60,12 @@ ${...} construct.
 
 /*
 When to use the Single and Double quotes?
-- whenever you need t store some static value like
+- whenever you need to store some static value like
     a name, address, etc. use Single or Double quotes.
 
 When to use Backticks?
 - whenver you have to use a dynamic value like the
-    addition of two numbers like below, use backticks.
+    addition of two numbers like in below ex, use backticks.
 */
 const name = 'Nihal';
 const backticks = `Hello ${name}, welcome!!! `;
@@ -85,7 +85,7 @@ console.log(typeof backticks);
 - In javascript, you don't need to specifiy the numbers
 this behaviour is called Untyped
 - In JavaScript, whether the number is Integer or
-Decimal is taking care by the run time env.
+Decimal, it is taken care by the run time env.
 */
 
 const intNum = 5;
@@ -119,7 +119,7 @@ whose value cannot be represented using actual numbers.
 */
 const stringEx = "Hii";
 const resultNan = firstNum - stringEx;
-console.log(resultNan, 'this is of type:' + typeof resultNan,'NaN: Not a Number');
+console.log(resultNan, 'this is of type:' + typeof resultNan);
 
 // BOOLEANS
 /*
@@ -145,7 +145,8 @@ if(isCool) {
 
 // example with condition:
 const age = 24;
-console.log("Age is greater than 20:", age > 20);
+console.log("age > 20:", age > 20);
+
 
 // NULL
 /*
@@ -157,7 +158,8 @@ console.log("Age is greater than 20:", age > 20);
 - null is an assigned value
 */
 let c_age = null;
-console.log(typeof c_age, c_age);
+console.log(c_age, 'typeof c_age is: '+typeof c_age);
+
 
 // UNDEFINED
 /*
@@ -170,7 +172,7 @@ variable
 a value
 */
 let a;
-console.log("This variable is:",a);
+console.log("a variable is of type:",a);
 
 /* When to use NULL and UNDEFINED ????
 - we use NULL to assign empty or unknown
@@ -194,16 +196,20 @@ store grouped variables.
 */
 const person = {
     name: 'Nihal', 
-//make sure to use ':' here instead of the 
-//traditional '=' signs
+/*
+make sure to use ':' here instead of the 
+traditional '=' signs
+*/
     age: 24,
 }
 // this returns all the values in the object
 console.log(person);
 console.log(typeof person);
 
-// to return only the specific value, use the
-// dot notation.
+/* 
+to return only the specific value, use the
+dot sign.
+*/
 console.log(person.name);
 console.log(typeof person.name);
 
@@ -212,12 +218,13 @@ Other kinds of Objects in JS
 - Arrays: to store ordered data collection
 */
 const arr = [1, 2, 3, 4, 5]
-console.log("This is an example of Array\n", arr)
+console.log("This is an example of Array\n",arr)
 console.log("Array is of type:", typeof arr);
 
 // Date
 const date = new Date();
-console.log("Date is type of an:",typeof date,"\n",date);
+console.log(date);
+console.log("Date is of type:",typeof date)
 
 /*
 At the end you have to remember that JavaScript is

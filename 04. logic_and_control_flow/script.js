@@ -1,7 +1,9 @@
 console.log("Logic and Control flow");
 
-// we are going to write actual block 
-// of code from now on
+/*
+we are going to write actual block 
+of code from now on
+*/
 
 /* IF STATEMENT example
 - if is a RESERVED JS KEYWORD
@@ -25,13 +27,13 @@ if (age > 18) {
 } else if (age === 18) {
     console.log("New Adult, Welcome!");
 } else {
-    console.log("FUCK OFF!!!")
+    console.log("Underage not allowed!!!")
 }
 
 // TRUTHY and FALSY
 /* TRUTHY
 - when we say a value is TRUTHY
-    we don't just means thst the value is true,
+    we don't just means that the value is true,
     rather we mean value changes to true when
     evaluated in a Boolean Context
 
@@ -56,9 +58,9 @@ TRUTHY values
 const cats = 10;
 
 if (cats) {
-    console.log(`You got ${cats} pussies.`);
+    console.log(`You got ${cats} cats.`);
 } else {
-    console.log("You got no pussy!");
+    console.log("You got no cats!");
 }
 
 // SWITCH STATEMENT
@@ -98,7 +100,7 @@ switch (hero) {
         break;
 
     case 'Peacemaker':
-        console.log("Do you really wanna make it");
+        console.log("Do you really wanna taste it");
         break;
 
     case 'Iron Man':
@@ -130,7 +132,7 @@ if (hero === 'Superman') {
 } else if (hero === 'Captain America') {
     console.log("I can do this all day");
 } else if (hero === 'Peacemaker') {
-    console.log("Do you really wanna make it");
+    console.log("Do you really wanna taste it");
 } else {
     console.log("No hero found!");
 }
@@ -144,15 +146,18 @@ if (hero === 'Superman') {
 SYNTAX of TERNARY OPERATOR
 compare it with if statement syntax
 ```
-if (condition) {
-    if true
-} else {
-    if false
-}
+condition ? true : false
 ```
+how to read above statement?
+'?'- is
+so read: is 'condition', if true then execute, else false execute
 
 ```
-condition ? if true : if false
+if (condition) {
+    if true, execute this code
+} else {
+    if false, execute this code
+}
 ```
 */
 
@@ -225,6 +230,6 @@ FINAL EXPRESSION
 */
 // example
 console.log("For Loop starts here:");
-for(let i =0; i < 10; i++) {
+for(let i = 0; i < 10; i++) {
     console.log(i);
 }

@@ -104,7 +104,7 @@ sayHi('Nihal');
 - Imp thing to know about RETURN in function is
     that, it stops the function execution immediately.
 - if there are multiple RETURN statements in a func,
-    only the first one will be executed, and the
+    only the first one will be executed, and then
     it stops.
 */
 function test() {
@@ -154,7 +154,7 @@ console.log("Square of the num is:", squared)
 PARAMETERS
 - used when definign a function
 - they are the names created in the function definition
-- it is like a variable which meaningful only inside
+- it is like a variable which is meaningful only inside
     of a function.
 - it won't be accessible outside of the function
 
@@ -163,7 +163,7 @@ ARGUMENTS
 - these are passed when making a function call
 - it is a real JS value
 
-If a parameter is not provided, it will  always 
+If a parameter is not provided, it will always 
 return as undefined.
 
 You can set the Default Parameter, just provide a 

@@ -18,35 +18,36 @@ let result = 0;
 
 // addition
 result = a + b;
-console.log(result);
+console.log("Addition: ",result);
 
 // subtraction
 result = a - b;
-console.log(result);
+console.log("Subtraction: ",result);
 
 // multiplication
 result = a * b;
-console.log(result);
+console.log("Multiplication: ",result);
 
 // division
 result = a / b;
-console.log(result);
+console.log("Division: ",result);
 
 // exponent
 result = a ** b;
-console.log(result);
+console.log("Exponent: ",result);
 
 // modulo: it is the remainder
 result = a % b;
-console.log(result);
+console.log("Modulo: ",result);
 
-// increment
+// Take note that, result variable is the latest stored value of it.
+// latest value of result = 3
 result++;
-console.log(result);
+console.log("Increment: ",result);
 
 // decrement
 result--;
-console.log(result);
+console.log("Decrement: ",result);
 
 // COMPARISON OPERATORS
 /* 
@@ -57,18 +58,18 @@ Comparison operator returns either true/false values
 // greater than '>'
 const x = 10;
 const y = 20;
-console.log("is x greater than y:",x > y);
+console.log("is x > y:",x > y);
 
 // greater than or equal to '>='
-console.log("is x greater than or equal to y:",x >= y);
+console.log("is x >= y:",x >= y);
 
 // less than '<'
-console.log("is x less than y:",x < y)
+console.log("is x < y:",x < y)
 
 // less than equal to '<='
-console.log("is x greater than or equal to y:",x <= y);
+console.log("is x <= y:",x <= y);
 
-// LOOSE EQUALITY OR IS EQUAL '=='
+// LOOSE EQUALITY OR DOUBLE EQUAL OR IS EQUAL '=='
 /*
 - It doesn't compare the Data types.
 - should be used LESS
@@ -84,16 +85,16 @@ console.log("is x greater than or equal to y:",x <= y);
 '===': we use this when we want to make sure the 
     value of variables are really equal.
 */
-console.log("is value of x equal to y:",x == y);
+console.log("is x == y:",x == y);
 
 // NOT EQUAL '!='
-console.log("is x not equal to y:",a != b);
+console.log("is x != y:",a != b);
 
 // STRICT EQUALITY '==='
-console.log("is x strictly equal to y:",a === b);
+console.log("is x === y:",a === b);
 
 // STRICT INEQUALITY '!=='
-console.log("is x strictly inequal to y:",a !== b);
+console.log("is x !==    y:",a !== b);
 
 /*
 When to use Loose Equality & Strict Equality ????
@@ -101,6 +102,7 @@ When to use Loose Equality & Strict Equality ????
 //example: in numbers
 console.log('loose and strict equality in numbers:\n',
 '5 == "5":',5 == "5",
+"\n",'3 === "3":', 3 === "3",
 "\n",'7 === 7:', 7 === 7);
 
 // in strings
@@ -116,12 +118,13 @@ console.log('loose and strict equality in strings:\n',
     return true only if both the values are equal
 */
 // example: comparing in loose and strict equality
-console.log('is Num 5 equal to string 5:',5 == '5',
-'\nis Num 5 strictly equal to String 5:', 5 === '5',
-'\nis Num 5 strictly equal to Num 5:', 5 === 5);
+console.log('is Num 5 == string 5:',5 == '5',
+'\nis Num 5 === String 5:', 5 === '5',
+'\nis Num 5 === Num 5:', 5 === 5);
 
 // SOME EXCEPTIONS to look out for
-console.log("*****Some Exceptions in JS*****");
+console.log("***** Some Exceptions in JS *****");
+
 console.log("'' == '0':",'' == '0');
 console.log("0 == '':",0 == '');
 console.log("0 == '0':",0 == '0');
@@ -166,7 +169,7 @@ const isCool = true;
 if(isCool && age > 18) {
     console.log('You may enter!');
 } else {
-    console.log('Fuck Off!');
+    console.log('Underage not allowed!');
 }
 
 // continuation logical operator
